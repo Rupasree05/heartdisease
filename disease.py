@@ -12,6 +12,9 @@ restecg=st.number_input('Enter the resting electrocardiographic results')
 thalach=st.number_input('Enter the maximum heart rate achieved')
 exang=st.number_input('Enter the Exercise included angina yes:1 no:0')
 oldpeak=st.number_input('Enter the ST depression induced by exercise relative to rest')
+slope=st.st.number_input('Enter the slope value')
+ca=st.number_input('Enter the ca value')
+thal=st.number_input('Enter the thal value')
 if st.button('Get the Diagnoise'):
     predictions=model.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]])
     if predictions=='y':
