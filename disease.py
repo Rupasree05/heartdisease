@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib
-st.title('Heart Disease preocess Automation')
+st.title('Heart Disease prediction')
 model=joblib.load('archive.joblib')
 age=st.number_input('Enter the age')
 sex=st.number_input('Enter the sex Male:0 Female:1')
