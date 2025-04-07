@@ -17,7 +17,7 @@ ca=st.number_input('Enter the ca value')
 thal=st.number_input('Enter the thal value')
 if st.button('Get the Diagnoise'):
     predictions=model.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]])
-    if predictions=='y':
+    if predictions==1:
         st.text('No Heart Disease Efected')
     else:
         st.text('There is a Heart Disease')
